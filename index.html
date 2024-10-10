@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Estudiantes</title>
     <!-- Enlazamos el archivo de estilos CSS externo -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="validar.js" defer></script> <!-- Vincular el archivo JavaScript -->
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <script src="assets/validar.js" defer></script> <!-- Vincular el archivo JavaScript -->
 </head>
 <body>
     <!-- Contenedor principal para el formulario -->
@@ -15,7 +15,7 @@
         <h1>Registro de Estudiantes</h1>
         
         <!-- Inicia el formulario -->
-        <form action="#" method="POST">
+        <form action="#" method="GET"> <!-- Cambiado de POST a GET -->
             <!-- Campo para el Número de Control -->
             <label for="control">Número de Control:</label>
             <input type="text" id="control" name="control" required>
@@ -35,7 +35,6 @@
             <!-- Campo desplegable para seleccionar el Sexo -->
             <label for="sexo">Sexo:</label>
             <select id="sexo" name="sexo" required>
-                <!-- Opción por defecto vacía para que el usuario elija -->
                 <option value="">Seleccione</option>
                 <option value="Masculino">Masculino</option>
                 <option value="Femenino">Femenino</option>
@@ -65,9 +64,7 @@
             <!-- Campo desplegable para seleccionar la Carrera -->
             <label for="carrera">Carrera:</label>
             <select id="carrera" name="carrera" required>
-                <!-- Opción por defecto vacía -->
                 <option value="">Seleccione</option>
-                <!-- Opciones disponibles para la carrera -->
                 <option value="Sistemas Computacionales">ING. Sistemas Computacionales</option>
                 <option value="Agronomia">ING. Agronomía</option>
                 <option value="Gestion Empresarial">ING. Gestión Empresarial</option>
@@ -79,5 +76,4 @@
         </form>
     </div>
 </body>
-
-
+</html>
